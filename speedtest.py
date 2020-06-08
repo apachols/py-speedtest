@@ -7,7 +7,7 @@ import traceback
 print('Speedtest: finding wifi SSID')
 
 p = subprocess.Popen(
-    ['/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport','-I'],
+    ['/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport', '-I'],
     stdout=subprocess.PIPE
 )
 wifi_output, err = p.communicate()
