@@ -13,7 +13,7 @@ Date,Time,SSID,Ping (ms),Download (Mbit/s),Upload (Mbit/s)
 
 ## setup
 - `brew install speedtest-cli`
-- clone into \$HOME/git/py-speedtest
+- `cd $HOME/git/ && git clone https://github.com/apachols/py-speedtest.git`
 - `mkdir -p /tmp/py-speedtest/`
 - Set to run via crontab or launchd (see below)
 - `tail -f /tmp/py-speedtest/speedtest.csv`
