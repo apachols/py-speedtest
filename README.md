@@ -1,10 +1,23 @@
 # py-speedtest
 
-## setup
+Writes a csv file with data from `speedtest-cli`:
+```
+Date,Time,SSID,Ping (ms),Download (Mbit/s),Upload (Mbit/s)
+06/08/20,13:31,iCantBelieveItsNotGigabit,18.136,81.30,10.80
+06/08/20,13:34,iCantBelieveItsNotGigabit,18.277,65.85,11.27
+06/08/20,14:00,iCantBelieveItsNotGigabit,17.326,86.06,11.27
+06/08/20,14:05,iCantBelieveItsNotGigabit,22.516,82.40,10.87
+06/08/20,14:10,iCantBelieveItsNotGigabit,67.668,49.21,7.91
+...
+```
 
+## setup
+- `brew install speedtest-cli`
 - clone into \$HOME/git/py-speedtest
 - `mkdir -p /tmp/py-speedtest/`
 - Set to run via crontab or launchd (see below)
+- `tail -f /tmp/py-speedtest/speedtest.csv`
+- `tail -f /tmp/std*.log`
 
 ### crontab
 
