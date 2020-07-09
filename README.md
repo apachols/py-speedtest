@@ -109,3 +109,13 @@ Here's how to install the plist:
 ```
 launchctl load -w ~/Library/LaunchAgents/com.zerowidth.launched.py-speedtest.plist
 ```
+
+... And, here's how to uninstall:
+
+
+Here's how to install the plist:
+
+```
+launchctl unload ~/Library/LaunchAgents/com.zerowidth.launched.py-speedtest.plist
+```
+
